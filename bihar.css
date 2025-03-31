@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);;
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(109,124,142,1) 100%); */
+    margin: 5px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+     /* ........header...... */
+.bihar-logo{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   /* background-color: #bde0fe; */
+   margin-bottom: 10px;
+   gap: 15px;
+
+    
+}
+.bihar-logo .logo1{
+    max-width: 90px;
+    height: auto;
+    border-radius: 100%;
+    gap: 6px;
+    background-color: #bde0fe;
+}
+
+.bihar-logo h1{
+    font-family: inherit;
+    font-weight: 800;
+    top: 100px;
+     box-shadow: 3px 3px 10px rgba(103, 114, 28, 0.685);
+    transition: box-shadow 0.3s ease-in-out; 
+  } 
+  
+   
+ .bihar-logo h1:hover{
+       background-color: #2ecc71;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+      } 
+
+      .bihar-vid{
+   max-width: 100%;
+   height: auto;
+}
+       /* ............GAYA....... */
+.gaya{
+    font-size: 30px;
+    margin-bottom: 20px;
+   text-align: center;
+}  
+.gaya1{
+    font-size: 20px;
+} 
+.bodhgaya .para{
+    font-size: 20px;
+    margin-left: 25px;
+}
+.bodhgaya .img{
+    max-width: 370px;
+    min-height: 370px;
+    gap: 20px;
+    border-radius: 10px;
+}
+@media(max-width:730px){
+  .bodhgaya.img{
+    max-width:250px ;
+  }
+}
+.bodhgaya ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    animation: slideIn 1.9s ease-in;
+    transition: box-shadow 0.4s ease-in-out;
+   
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.img{
+    transition: box-shadow 0.4s ease-in-out;
+}
+.img:hover{
+    box-shadow: 0 0 15px rgba(142, 68, 173, 0.8);
+}
+
+   /* ...........TOP DESTINATION......... */
+
+   .top-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ .top-container .top{
+    max-width: 370px;
+    min-height: 370px;
+    border-radius: 10px;
+  }
+  .top-container  {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slideDown 2s ease-in-out 1s forwards;
+}
+
+@keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .top-container a{
+    text-decoration: none;
+  }
+  .top-container a .para{
+    color: rgba(84, 101, 107, 0.913);
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .exp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+   
+  }
+  .exp a{
+    text-decoration: none;
+  }
+.para{
+    font-size: 25px;
+   
+    margin-left: 20px;
+   
+    }
+
+.exp a{
+    font-size: 25px;
+    color: black;
+}
+.para:hover{
+    color: #428d6ea9;
+    
+}
+.exp-one{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    gap: 10px;
+ 
+}
+
+.exp-one a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    
+   }
+
+           /* ...............FAMOUS........ */
+.famous{
+   border-radius: 10px;
+    max-width: 370px;
+    min-height: 370px;
+    
+}
+.famous:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.box-bihar{
+    font-size: 25px;
+}
+
+.box-bihar1{
+    margin-left: 10px;
+  }
+  .box-bihar1 .img-tiger {
+    position: static;
+    float: right;
+    max-width: 500px;
+    height:auto;
+    margin-left: 10px;
+   margin-right: 10px;
+ }
+.box-bihar1 ul.tiger1{
+   font-family:   inherit;
+    color: #000;
+    
+}
+.tiger{
+    font-size: 20px;
+   
+}
+
+.btn{
+    border-radius: 5px solid;
+    background-color: brown;
+    color: white;
+    font-size:16PX;
+    margin-bottom: 10px;
+     margin-left: 50px;
+}
+.social{
+  font-weight: 500;
+  font-size: 55px;
+  font-family: "Prata", serif
+}
+.social-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    background-image: url(cq5dam.web.1280.765.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem ;
+    border-radius: 1rem;
+    margin-bottom: 15px;
+  
+   }
+  .text{
+  font-size: 1.3125rem;
+  background-color: rgba(0, 0, 0, 0.64);
+  color: white;
+  padding: .375rem .75rem;
+}
+.social-net{
+  color: #b3d723;
+  font-size: 18px;
+  font-family: "Prata", serif
+ 
+}
+.social-net1{
+  margin-top: 50px;
+  min-height: 20px;
+  
+}
+
+.btn-1{
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 30px;
+ 
+}
+
+.miximg{
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+.mix-one {
+  border-radius: 10px ;
+ grid: 4;
+ grid-template-columns:repeat(4, minmax(0, 4fr));
+}
+ .mix-two{
+   margin-left: 14px;
+   margin-top:10px;
+   max-width: 280px;
+   min-height: 280px;
+ }
+
+.footer{
+  background-color: black;
+  /* height: 500px; */
+  color: white;
+  display: flex;
+  padding: 5PX;
+  font-family: "Prata", serif;
+  /* text-align: center; */
+ 
+ }
+.footer p{
+  margin-left: 50PX;
+  font-size: 20px;
+}
+
+.foot a{
+  color: gray;
+  font-size: 20px;
+  padding: 5px;
+  text-decoration: none;
+  word-break: break-all;
+  
+  }
+.foot a:hover{
+  color: white;
+}
+.foot ul li {
+  padding: 10px 0; /* Adds vertical padding */
+}
+.foot ul{
+list-style: none;
+
+}
+.foot1{
+  color: white;
+}
+.foot1 p{
+  font-family: "Prata", serif;
+  font-size: 25px;
+}
+.number{
+  color: white;
+font-size: 25px;
+padding:40px;
+text-decoration: none;
+}
+ .feed{
+  color: gray;
+  font-size: 90px;
+}
+.foot1 .address{
+  margin-bottom: 100px;
+  font-family: "Prata", serif;
+}
+
+ span{
+ float: left;
+ padding-top: 13px;
+ padding-left: 10px;
+ 
+
+}
+
+.footer{
+  margin: 0;
+  max-width: 100%;
+}
+.down{
+  background-color: black;
+}
+.icon{
+ 
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+ justify-content: center;
+ gap: 20px; 
+ border-radius: 100%;
+ font-size: 30px;
+ text-decoration: none;
+ margin-bottom: 20px;
+ 
+
+}
+.icon-1{
+  color: white;
+  border-radius: 30%;
+}  
+.icon-1:hover{
+font-size: 40px;
+/* background-color: blue; */
+box-shadow:inset 5px 5px 15px rgba(200, 23, 23, 10); 
+}
+
+ @media(max-width:825px){
+    .mix-two{
+      max-width: 170px;
+    }
+  }
+
+@media(max-width: 991.98px){
+  .social-work{padding: 2.8125rem 1.125rem;
+  }
+}
+
+@media(max-width:700px){
+  .social{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+ @media (max-width:510px){
+    .box-bihar1 .img-tiger {
+      max-width: 200px;
+    }
+ }
+ 
